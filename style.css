@@ -1,0 +1,179 @@
+.bgimage {
+    height:100vh;
+    background: url('images/mamuns.jpg');
+    background-size:cover;
+    position:relative;
+}
+.navbar ul li a{
+    color:black;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+.navbar ul li a:hover{
+    background-color: aquamarine;
+    border-radius: 20px;
+}
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+}
+
+/* services section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
+}
+
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color:cadetblue;
+ 
+  
+}
+
+/*progress bar design*/
+.card-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: large;
+}
+
+.progress-bar{
+    background-color: aqua;
+    width: 500px;
+    padding: 20px;
+    border-radius: 5px;
+   
+}
+.progress-bar li{
+    list-style-type: none;
+    text-transform: uppercase;
+  margin: 30px 0px;
+  font-weight: bolder;
+  position: relative;
+  text-align: left;
+ 
+}
+.progress-bar li::before{
+    content: ' ';
+    width: 100%;
+    height: 25px;
+    position: absolute;
+    top: calc(100% + 5px);
+    background-color: darkslategrey;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    border-radius: 100px;
+    animation-iteration-count: 2;
+    
+}
+.progress-bar li::after{
+    content: ' ';
+    width: 0;
+    height: 25px;
+    position: absolute;
+    top: calc(100% + 5px);
+    background-color: deeppink;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    border-radius: 100px;
+    animation-iteration-count: 5;
+   left: 0px;
+   animation-duration: 3s;
+    
+}
+.progress-bar li.html::after{
+    animation-name: html;
+}
+@keyframes html {
+   to{
+    width: 100%;
+   }
+}
+.progress-bar li.css::after{
+    animation-name: css;
+}
+@keyframes css {
+   to{
+    width: 90%;
+   }
+}
+.progress-bar li.java::after{
+    animation-name: java;
+}
+@keyframes java {
+   to{
+    width: 60%;
+   }
+}
+.progress-bar li.bootstrap::after{
+    animation-name: bootstrap;
+}
+@keyframes bootstrap {
+   to{
+    width: 90%;
+   }
+}
+.progress-bar li.react::after{
+    animation-name: react;
+}
+@keyframes react {
+   to{
+    width: 20%;
+   }
+}
+.progress-bar li.python::after{
+    animation-name: python;
+}
+@keyframes python {
+   to{
+    width: 70%;
+   }
+}
+.footer{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: darkslategray;
+    color: white;
+}
+.btn1{
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px 10px;
+    
+}
